@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"proyecto1/Structs"
+	"proyecto2/Structs"
 	"strings"
 )
 

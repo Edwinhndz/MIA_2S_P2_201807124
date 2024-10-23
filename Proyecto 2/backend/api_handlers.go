@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"proyecto1/Analyzer"
-	"proyecto1/DiskManagement"
-	"proyecto1/FileSystem"
-	"proyecto1/User"
+	"proyecto2/Analyzer"
+	"proyecto2/DiskManagement"
+	"proyecto2/FileSystem"
+	"proyecto2/User"
 	"strings"
 )
 

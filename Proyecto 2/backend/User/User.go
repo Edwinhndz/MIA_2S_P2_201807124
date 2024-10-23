@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"fmt"
 	"os"
-	"proyecto1/DiskManagement"
-	"proyecto1/Structs"
-	"proyecto1/Utilities"
+	"proyecto2/DiskManagement"
+	"proyecto2/Structs"
+	"proyecto2/Utilities"
 	"strings"
 )
 

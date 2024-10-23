@@ -5,8 +5,8 @@ import (
 	"encoding/binary"
 	"fmt"
 	"math/rand"
-	"proyecto1/Structs"
-	"proyecto1/Utilities"
+	"proyecto2/Structs"
+	"proyecto2/Utilities"
 	"strings"
 	"time"
 )
