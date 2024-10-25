@@ -24,7 +24,7 @@ const CommandService = {
 
     if (command.startsWith("mkdisk")) {
       return {
-        url: "http://localhost:8080/api/mkdisk",
+        url: "http://3.84.220.240:8080/api/mkdisk",
         method: "POST",
         body: {
           size: parseInt(params.size, 10),
@@ -36,7 +36,7 @@ const CommandService = {
     } else if (command.startsWith("fdisk")) {
       if (params.delete) {
         return {
-          url: "http://localhost:8080/api/fdisk",
+          url: "http://3.84.220.240:8080/api/fdisk",
           method: "POST",
           body: {
             delete: params.delete.toLowerCase(),  // Fast o Full
@@ -46,7 +46,7 @@ const CommandService = {
         };
       } else if (params.add) {
         return {
-          url: "http://localhost:8080/api/fdisk",
+          url: "http://3.84.220.240:8080/api/fdisk",
           method: "POST",
           body: {
             add: parseInt(params.add, 10),
@@ -57,7 +57,7 @@ const CommandService = {
         };
       } else {
         return {
-          url: "http://localhost:8080/api/fdisk",
+          url: "http://3.84.220.240:8080/api/fdisk",
           method: "POST",
           body: {
             size: parseInt(params.size, 10),
@@ -71,7 +71,7 @@ const CommandService = {
       }
     } else if (command.startsWith("mount")) {
       return {
-        url: "http://localhost:8080/api/mount",
+        url: "http://3.84.220.240:8080/api/mount",
         method: "POST",
         body: {
           path: params.path,
@@ -80,7 +80,7 @@ const CommandService = {
       };
     } else if (command.startsWith("mkfs")) {
       return {
-        url: "http://localhost:8080/api/mkfs",
+        url: "http://3.84.220.240:8080/api/mkfs",
         method: "POST",
         body: {
           id: params.id,
@@ -90,7 +90,7 @@ const CommandService = {
       };
     } else if (command.startsWith("login")) {
       return {
-        url: "http://localhost:8080/api/login",
+        url: "http://3.84.220.240:8080/api/login",
         method: "POST",
         body: {
           user: params.user,
@@ -100,7 +100,7 @@ const CommandService = {
       };
     } else if (command.startsWith("readmbr")) {
       return {
-        url: "http://localhost:8080/api/readmbr",
+        url: "http://3.84.220.240:8080/api/readmbr",
         method: "POST",
         body: {
           path: params.path  
@@ -108,7 +108,7 @@ const CommandService = {
       };
   }else if (command.startsWith("rep")) {
       return {
-        url: "http://localhost:8080/api/rep",
+        url: "http://3.84.220.240:8080/api/rep",
         method: "POST",
         body: {
           name: params.name,
